@@ -26,6 +26,8 @@ for (var key in localStorage) {
   output = output+(key + ':' +localStorage[key])+'\n';
 }
         
+doument.getElementById("sid").innerHTML = window.localStorage.getItem("wingify_push_subscriber_id");
+        
 console.log(output);
 
 $('#ls').html(output);
@@ -35,6 +37,8 @@ $('#ls').html(output);
 <body>
 <h1> Welcome to ORC 1 APP </h1>
 <div id="ls">
+    
+    Subscripton Id :  <p id="sid"></p>
     
     
     
