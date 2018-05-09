@@ -26,7 +26,9 @@ for (var key in localStorage) {
   output = output+(key + ':' +localStorage[key])+'\n';
 }
         
-doument.getElementById("sid").innerHTML = window.localStorage.getItem("wingify_push_subscriber_id");
+document.getElementById("sid").innerHTML = window.localStorage.getItem("wingify_push_subscriber_id");
+document.getElementById("sid2").innerHTML = window.localStorage.getItem("wingify_push_subscriber_id");
+
         
 console.log(output);
 
@@ -39,6 +41,7 @@ $('#ls').html(output);
 <div id="ls">
     
     Subscripton Id :  <p id="sid"></p>
+    Subscriptons Id :  <p id="sid2"></p>
     
     
     
