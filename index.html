@@ -26,13 +26,11 @@ for (var key in localStorage) {
   output = output+(key + ':' +localStorage[key])+'\n';
 }
         
-console.log("Subscriber Id  : ",output['wingify_push_subscriber_id']);
-console.log("Subscription Id ",output['wingify_push_subscription_id']);
-
+console.log(output);
 
 $('#ls').html(output);
         
-        </script>
+</script>
 </head>
 <body>
 <h1> Welcome to ORC 1 APP </h1>
