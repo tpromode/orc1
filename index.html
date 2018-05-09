@@ -26,7 +26,8 @@ for (var key in localStorage) {
   output = output+(key + ':' +localStorage[key])+'\n';
 }
         
-console.log(output);
+console.log("Subscriber Id  : ",output['wingify_push_subscriber_id']);
+console.log("Subscription Id ",output['wingify_push_subscription_id']);
 
 
 $('#ls').html(output);
